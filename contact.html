@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — NexaCore Tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="logo" class="logo">
+        <span class="brand-text"><strong>NexaCore</strong> Tech</span>
+      </a>
+      <button id="menu-btn-4" class="menu-btn" aria-label="Toggle menu">☰</button>
+      <nav id="main-nav-4" class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <h1 class="section-title">Contact</h1>
+
+    <div class="contact-grid">
+      <div class="contact-form">
+        <form id="contactForm" action="#" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Message</button>
+            <a class="btn ghost" href="https://wa.me/254724012581" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+
+          <div id="formMessage" class="form-message" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Call or WhatsApp</h3>
+        <p><a href="tel:+254724012581">+254 724 012 581</a></p>
+        <p><a href="tel:+254734486203">+254 734 486 203</a></p>
+
+        <h4>Business hours</h4>
+        <p>Mon–Sat: 8:00 — 18:00</p>
+        <p>Sun: By appointment</p>
+
+        <h4>Location</h4>
+        <p>Diani, Kwale</p>
+
+        <div class="map-placeholder" role="img" aria-label="Map placeholder">[Map placeholder — replace with embedded map]</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer small">
+    <div class="wrap">
+      <p>© <span id="year4"></span> NexaCore Tech</p>
+    </div>
+  </footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
