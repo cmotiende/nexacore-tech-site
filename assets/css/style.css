@@ -35,7 +35,7 @@ body{
 .main-nav a.active, .main-nav a:hover{background:#f3f6ff;color:var(--blue)}
 
 /* hero */
-.hero{padding:2.2rem 0;background:linear-gradient(180deg,#fff,#fbfdff)}
+.hero{padding: 2.2rem 0; background: linear-gradient(180deg,#fff,#fbfdff); min-height: calc(100vh - 70px); display: flex; align-items: center;}
 .hero, .hero *{max-width:100%;box-sizing:border-box}
 .hero-grid{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center;width:100%;overflow:hidden}
 .hero-text h1{font-size:1.45rem;margin:0 0 0.6rem}
@@ -109,4 +109,5 @@ body{
 /* utility */
 .section{padding:1rem 0}
 .wrap .active{font-weight:700}
+
 
