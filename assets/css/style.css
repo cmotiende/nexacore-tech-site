@@ -29,7 +29,6 @@ body{
 .logo{height:44px;width:44px;object-fit:contain}
 .brand-text{font-weight:600;font-size:1.05rem}
 .menu-btn{display:none;background:none;border:0;font-size:1.4rem;cursor:pointer}
-
 /* nav */
 .main-nav{display:flex;gap:1rem}
 .main-nav a{color:var(--text);text-decoration:none;padding:0.5rem 0.6rem;border-radius:8px}
@@ -37,16 +36,22 @@ body{
 
 /* hero */
 .hero{padding:2.2rem 0;background:linear-gradient(180deg,#fff,#fbfdff)}
-.hero-grid{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
+.hero, .hero *{max-width:100%;box-sizing:border-box}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center;width:100%;overflow:hidden}
 .hero-text h1{font-size:1.45rem;margin:0 0 0.6rem}
 .lead{color:var(--muted);margin-bottom:1rem}
 .ctas{display:flex;gap:0.6rem;flex-wrap:wrap}
+.ctas .btn{width:100%;text-align:center}
+@media (min-width:600px){
+  .ctas .btn{width:auto;}
+}
 .btn{display:inline-block;padding:0.6rem 1rem;border-radius:10px;background:var(--blue);color:#fff;text-decoration:none;font-weight:600}
 .btn.ghost{background:transparent;color:var(--blue);border:1px solid #e6f0ff}
 .btn.whatsapp{background:#25D366}
 .btn.large{padding:0.9rem 1.2rem;font-size:1.05rem}
 .trust{margin-top:0.9rem;display:flex;gap:0.5rem;flex-wrap:wrap}
 .chip{background:#f2f8ff;padding:0.3rem 0.6rem;border-radius:8px;color:var(--blue);font-weight:600}
+.hero img{width:100%;height:auto;display:block}
 
 /* cards */
 .section-title{font-size:1.2rem;margin-bottom:0.8rem}
@@ -104,3 +109,4 @@ body{
 /* utility */
 .section{padding:1rem 0}
 .wrap .active{font-weight:700}
+
